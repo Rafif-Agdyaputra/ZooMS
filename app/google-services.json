@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "657440691124",
+    "firebase_url": "https://helloworld-240715.firebaseio.com",
+    "project_id": "helloworld-240715",
+    "storage_bucket": "helloworld-240715.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657440691124:android:2acd8371903ce641",
+        "android_client_info": {
+          "package_name": "com.agdyaputra.zooms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657440691124-5i0drossemk90i9jbie3cf6je6lmvs86.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agdyaputra.zooms",
+            "certificate_hash": "c57cd24365957bc4134fd47b8bc71ea52e1ff459"
+          }
+        },
+        {
+          "client_id": "657440691124-29te4e1cbng61kfn305vl7935f7himov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr_g9XQ8Kd9K1RpLi-OHq2ymLqx0q_lpM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657440691124-29te4e1cbng61kfn305vl7935f7himov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">ZooMS</string>
+
+    <!-- home string -->
+    <string name="animal">Animal</string>
+    <string name="medicine">Medicine</string>
+    <string name="food">Food</string>
+    <string name="place">Place</string>
+
+    <!-- Animal Gender -->
+    <string-array name="animalGender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Animal condition -->
+    <string-array name="animalCondition">
+        <item>Healthy</item>
+        <item>Sick</item>
+        <item>Pregnant</item>
+    </string-array>
+
+    <!-- Animal Habitat -->
+    <string-array name="animalHabitat">
+        <item>Jaguar001</item>
+        <item>Chipanzee001</item>
+        <item>Elephant001</item>
+    </string-array>
+
+    <!-- Animal Habitat Create -->
+    <string-array name="animalHabitatCreate">
+        <item>Tropical Rainforest</item>
+        <item>Savannah</item>
+        <item>Outback</item>
+        <item>Alpine</item>
+        <item>Grassland</item>
+        <item>Tundra</item>
+        <item>Temperate Forest</item>
+        <item>Boreal Forest</item>
+    </string-array>
+
+    <string name="create_animal_text">Add New Animal Section</string>
+    <string name="edit_animal_text">Edit Current Animal Section</string>
+
+</resources>

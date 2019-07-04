@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/linear_Layout"
+    tools:context=".FoodEdit">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border_bottom"
+        android:text="Edit Current Food Section"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diets ID"/>
+
+        <EditText
+            android:id="@+id/food_id"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="Enter Diets ID"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType=""/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diets Name"/>
+
+        <EditText
+            android:id="@+id/food_name"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="Enter Diets Name"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType=""/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Stock"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType=""/>
+
+        <EditText
+            android:id="@+id/food_current_stock"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:hint="Enter Current Stock" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stock"/>
+
+        <EditText
+            android:id="@+id/food_stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:inputType="number"
+            android:hint="Stock" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFoodAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00a65a"
+                android:text="Add"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnFoodTake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#f39c12"
+                android:text="TAKE"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
