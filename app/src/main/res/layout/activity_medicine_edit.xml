@@ -19,16 +19,6 @@
         android:textColor="#000"
         android:textSize="22sp" />
 
-    <ScrollView
-        android:scrollbarAlwaysDrawVerticalTrack="true"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -38,25 +28,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Medicine ID"/>
-
-        <EditText
-            android:id="@+id/MedIdEdit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:hint="Enter Medicine ID"
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:inputType=""/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="Medicine Name"/>
-
         <EditText
-            android:id="@+id/MedNameEdit"
+            android:id="@+id/med_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
@@ -72,10 +46,8 @@
             android:focusable="true"
             android:focusableInTouchMode="true"
             android:inputType=""/>
-
         <EditText
             android:id="@+id/med_current_stock"
-            android:enabled="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
@@ -111,26 +83,23 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnMedAdd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#00a65a"
                 android:text="Add"
                 android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="40dp"
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/btnMedTake"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#f39c12"
-                android:text="Apply Treatment"
-                android:layout_marginEnd="10dp"
+                android:text="TAKE"
+                android:layout_marginEnd="40dp"
                 android:textSize="18sp" />
 
             <Button
-                android:id="@+id/btnDeleteMed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#f56042"
@@ -138,8 +107,7 @@
                 android:textSize="18sp" />
 
         </LinearLayout>
-    </LinearLayout>
-        </LinearLayout>
 
-    </ScrollView>
+    </LinearLayout>
+
 </LinearLayout>

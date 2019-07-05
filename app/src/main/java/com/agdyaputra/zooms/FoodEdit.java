@@ -38,7 +38,7 @@ public class FoodEdit extends AppCompatActivity {
 
         //=======get data from intent=========//
         final String FoodId = getIntent().getStringExtra("FoodID");
-        final String FoodName = getIntent().getStringExtra("FoodName");
+        String FoodName = getIntent().getStringExtra("FoodName");
         final String FoodStock = getIntent().getStringExtra("FoodStock");
 
         //========set data to EditText views=======//
@@ -52,14 +52,13 @@ public class FoodEdit extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Food_Id = FoodIdUI.getText().toString();
-                final String Food_Name = FoodNameUI.getText().toString();
+                final String FoodName = FoodNameUI.getText().toString();
 
                 if (cm.getActiveNetworkInfo() != null) {
                     if (FStockUI.getText().toString().isEmpty()) {
                         FStockUI.setError("Please Enter Stock Values");
                         FStockUI.requestFocus();
-                    }
-                    else {
+                    }else {
                         final int FoodCurrStock = Integer.parseInt(FoodStockUI.getText().toString());
                         final int Stock = Integer.parseInt(FStockUI.getText().toString());
                         final String result = String.valueOf(FoodCurrStock + Stock);
@@ -68,7 +67,7 @@ public class FoodEdit extends AppCompatActivity {
                             FStockUI.requestFocus();
                         } else {
                             //============================ CALL SUBMIT FUNCTION ===================================================================//
-                            submitAddFood(new FoodModel(Food_Id, Food_Name, result));
+                            submitAddFood(new FoodModel(Food_Id, FoodName, result));
                             FoodStockUI.setText(result);
                         }
                     }
@@ -84,7 +83,7 @@ public class FoodEdit extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Food_Id = FoodIdUI.getText().toString();
-                final String Food_Name = FoodNameUI.getText().toString();
+                final String FoodName = FoodNameUI.getText().toString();
 
                 if (cm.getActiveNetworkInfo() != null) {
                     if (FStockUI.getText().toString().isEmpty()) {
@@ -103,7 +102,7 @@ public class FoodEdit extends AppCompatActivity {
                         }
                         else {
                             //============================ CALL SUBMIT FUNCTION ===================================================================//
-                            submitTakeFood(new FoodModel(Food_Id, Food_Name, result));
+                            submitTakeFood(new FoodModel(Food_Id, FoodName, result));
                             FoodStockUI.setText(result);
                         }
                     }

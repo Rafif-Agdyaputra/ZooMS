@@ -123,13 +123,13 @@ public class AnimalEdit extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Animal_Id = AnimalIdUI.getText().toString();
-                final String Animal_Name = AnimalNameUI.getText().toString();
+                final String AnimalName = AnimalNameUI.getText().toString();
                 final String Species = AnimalSpeciesUI.getText().toString();
                 final String Gender = staticSpinner1.getSelectedItem().toString();
                 final String Status = staticSpinner2.getSelectedItem().toString();
                 final String Placement = SpinnerAnimEdit.getText().toString();
                 if (cm.getActiveNetworkInfo() != null) {
-                    if (Animal_Name.isEmpty()) {
+                    if (AnimalName.isEmpty()) {
                         AnimalNameUI.setError("Please enter Animal Name");
                         AnimalNameUI.requestFocus();
                     } else if (Species.isEmpty()) {
@@ -145,7 +145,7 @@ public class AnimalEdit extends AppCompatActivity {
                             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                                 if(dataSnapshot.exists()){
                                     //============================ CALL SUBMIT FUNCTION ===================================================================//
-                                    submitEditAnimals(new AnimalModel(Animal_Id, Animal_Name, Species, Gender, Status, Placement));
+                                    submitEditAnimals(new AnimalModel(Animal_Id, AnimalName, Species, Gender, Status, Placement));
                                     AnimManage();
                                     }
                                     else {

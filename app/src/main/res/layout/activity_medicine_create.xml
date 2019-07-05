@@ -42,7 +42,7 @@
             android:text="Stock" />
 
         <EditText
-            android:id="@+id/MedStockCreate"
+            android:id="@+id/MedSpeciesCreate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
@@ -50,7 +50,7 @@
             android:inputType="number" />
 
         <Button
-            android:id="@+id/btnCreateMedicine"
+            android:id="@+id/btnCreateAnim"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#000"

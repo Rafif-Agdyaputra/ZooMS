@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:background="@drawable/border_bottom"
-        android:text="Edit Place Manage Section"
+        android:text="Add New Place Section"
         android:textColor="#000"
         android:textSize="22sp" />
 
@@ -22,19 +22,6 @@
         android:layout_height="match_parent"
         android:layout_marginTop="40dp"
         android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Place Name"/>
-
-        <EditText
-            android:id="@+id/PlaceIDEdit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:hint="Enter Place ID"
-            android:enabled="false"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -54,23 +41,21 @@
             android:text="Current Habitat"/>
 
         <EditText
-            android:id="@+id/PlaceCurrentEdit"
+            android:id="@+id/PlaceCurrentCreate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="15dp"
             android:hint="Enter Current Habitat"
             android:focusable="true"
             android:focusableInTouchMode="true"
-            android:enabled="false"
             android:inputType=""/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="New Habitat"/>
-
+            android:text="Habitat"/>
         <Spinner
-            android:id="@+id/static_spinner1place_edit"
+            android:id="@+id/static_spinner1"
             style="@style/Base.Widget.AppCompat.Spinner.Underlined"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -78,7 +63,7 @@
             android:layout_marginBottom="15dp" />
 
         <Button
-            android:id="@+id/btnEditPlace"
+            android:id="@+id/btnCreatePlace"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="#000"

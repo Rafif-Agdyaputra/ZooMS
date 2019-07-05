@@ -46,7 +46,7 @@ public class PlaceCreate extends AppCompatActivity {
                 final String PlaceName = PlaceNameUI.getText().toString();
                 final String Habitat = staticSpinner1place.getSelectedItem().toString();
                 if(PlaceName.isEmpty()){
-                    PlaceNameUI.setError("Please enter Place Name");
+                    PlaceNameUI.setError("Please enter Animal Name");
                     PlaceNameUI.requestFocus();
                 }else{
                     Place_Id = FirebaseDatabase.getInstance().getReference().push().getKey();

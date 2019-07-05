@@ -13,7 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MenuActivity"/>
+        <activity android:name=".MenuActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".AnimalActivity" />
         <activity android:name=".AnimalManagement" />
         <activity android:name=".AnimalCreate" />
@@ -22,20 +28,10 @@
         <activity android:name=".FoodManagement" />
         <activity android:name=".FoodActivity" />
         <activity android:name=".MedicineCreate" />
-        <activity android:name=".MedicineActivity" />
-        <activity android:name=".MedicineManagement" />
         <activity android:name=".MedicineEdit" />
         <activity android:name=".PlaceCreate" />
         <activity android:name=".PlaceActivity" />
         <activity android:name=".PlaceEdit"/>
-        <activity android:name=".PlaceManagement"/>
-        <activity android:name=".LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
