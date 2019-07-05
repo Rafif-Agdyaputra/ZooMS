@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 public class PlaceActivity extends AppCompatActivity {
 
     private LinearLayout btnCreatePlace;
+    private LinearLayout btnManagePlace;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +23,22 @@ public class PlaceActivity extends AppCompatActivity {
                 PlaceCreate();
             }
         });
+        btnManagePlace = findViewById(R.id.BtnPlaceManage);
+        btnManagePlace.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PlaceManage();
+            }
+        });
     }
 
     public void PlaceCreate(){
         Intent intent = new Intent(this, PlaceCreate.class);
+        startActivity(intent);
+    }
+
+    public void PlaceManage(){
+        Intent intent = new Intent(this, PlaceManagement.class);
         startActivity(intent);
     }
 }

@@ -38,7 +38,7 @@ public class FoodEdit extends AppCompatActivity {
 
         //=======get data from intent=========//
         final String FoodId = getIntent().getStringExtra("FoodID");
-        String FoodName = getIntent().getStringExtra("FoodName");
+        final String FoodName = getIntent().getStringExtra("FoodName");
         final String FoodStock = getIntent().getStringExtra("FoodStock");
 
         //========set data to EditText views=======//
@@ -52,7 +52,7 @@ public class FoodEdit extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Food_Id = FoodIdUI.getText().toString();
-                final String FoodName = FoodNameUI.getText().toString();
+                final String Food_Name = FoodNameUI.getText().toString();
 
                 if (cm.getActiveNetworkInfo() != null) {
                     if (FStockUI.getText().toString().isEmpty()) {
@@ -67,7 +67,7 @@ public class FoodEdit extends AppCompatActivity {
                             FStockUI.requestFocus();
                         } else {
                             //============================ CALL SUBMIT FUNCTION ===================================================================//
-                            submitAddFood(new FoodModel(Food_Id, FoodName, result));
+                            submitAddFood(new FoodModel(Food_Id, Food_Name, result));
                             FoodStockUI.setText(result);
                         }
                     }
@@ -83,7 +83,7 @@ public class FoodEdit extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Food_Id = FoodIdUI.getText().toString();
-                final String FoodName = FoodNameUI.getText().toString();
+                final String Food_Name = FoodNameUI.getText().toString();
 
                 if (cm.getActiveNetworkInfo() != null) {
                     if (FStockUI.getText().toString().isEmpty()) {
@@ -102,7 +102,7 @@ public class FoodEdit extends AppCompatActivity {
                         }
                         else {
                             //============================ CALL SUBMIT FUNCTION ===================================================================//
-                            submitTakeFood(new FoodModel(Food_Id, FoodName, result));
+                            submitTakeFood(new FoodModel(Food_Id, Food_Name, result));
                             FoodStockUI.setText(result);
                         }
                     }
